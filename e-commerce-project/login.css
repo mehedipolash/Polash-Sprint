@@ -1,0 +1,95 @@
+.log-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 60vh;
+  color: black;
+}
+
+.log-in .card {
+  width: 40rem; /* Base width for larger screens */
+  max-width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-control label {
+  text-align: left;
+  font-size: 1rem;
+  color: darkslategrey;
+}
+
+.form-control input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.form-btn-field {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  width: 30%;
+  padding: 1rem;
+  color: black;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: darkslategrey;
+}
+
+@media (max-width: 992px) {
+  .log-in .card {
+    width: 60%; /* Smaller width for screens 992px or less */
+    padding: 1.2rem; /* Reduced padding */
+  }
+
+  .contact-btn {
+    width: 50%;
+  }
+
+  .form-control input {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 768px) {
+  .log-in .card {
+    width: 70%; /* Further reduced width for smaller screens */
+    padding: 1rem;
+  }
+
+  .form-control input {
+    font-size: smaller;
+  }
+
+  .contact-btn {
+    width: 60%;
+    font-size: 1.1rem;
+  }
+}
